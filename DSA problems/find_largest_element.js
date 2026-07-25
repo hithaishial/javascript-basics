@@ -36,5 +36,29 @@ function secondLargestElement(){
     console.log("The second largest number is: ", secondLargest);
 }
 
+function secondSmallestElement() {
+
+    let numbers = [75, 31, 89, 43, 29];
+    let smallest = numbers[0];
+    let secondSmallest;
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] <= smallest) {
+
+            secondSmallest = smallest;
+            smallest = numbers[i];
+
+        } else if (numbers[i] < secondSmallest || secondSmallest === undefined) {
+
+            secondSmallest = numbers[i];
+        }
+    }
+
+    console.log("The second smallest number is: ", secondSmallest);
+}
+
+
 largestElement();
 secondLargestElement();
+secondSmallestElement();
