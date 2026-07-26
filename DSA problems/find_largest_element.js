@@ -66,6 +66,7 @@ let smallest = numbers1[0];
 for(let i=1; i<numbers1.length; i++){
 
     if(smallest > numbers1[i]){
+
         smallest = numbers1[i];
     }
 
@@ -73,7 +74,32 @@ for(let i=1; i<numbers1.length; i++){
 console.log("the smallest element is: ", smallest);
 }
 
+function diffBetweenLargestAndSmallest(){
+
+    let oddNumbers = [75, 31, 89, 43, 29]
+    let largest = oddNumbers[0];
+    let smallest = oddNumbers[0];
+    let difference;
+
+    for(let i = 1; i < oddNumbers.length; i++){
+        
+        if(oddNumbers[i] > largest){
+            
+            largest = oddNumbers[i];
+        }
+        if(smallest > oddNumbers[i]){
+        
+           smallest = oddNumbers[i];
+        }
+    }
+
+    difference = largest - smallest;
+
+    console.log("The difference between largest and smallest is:", difference);
+}
+
 smallestElement();
 largestElement();
 secondLargestElement();
 secondSmallestElement();
+diffBetweenLargestAndSmallest();
