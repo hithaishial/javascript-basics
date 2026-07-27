@@ -28,15 +28,30 @@ function copyArrayIntoOther(){
 function moveZeroesToEnd(){
 
     let array = [1, 0, 2, 0, 3, 0, 4, 0]
+    let index = 0;
 
     for(let i = 0; i < array.length; i++){
 
-        if(array[i] == 0){
-            array.push(array[i]);
+        if(array[i] != 0){
+            array[index] = array[i];
+            index++;
         }
     }
 
+    for(let i = index; i < array.length; i++){
+
+        array[i]=0;
+    }
+
     console.log("The array after moving zeroes to the end is: ", array);
+}
+
+function removeDuplicateElements(){
+
+    let flowers = ["lilly", "rose", "daisy", "tulip", "jasmine", "lotus"]
+    let count;
+
+    for(let i = 0; )
 }
 
 copyArrayIntoOther();
