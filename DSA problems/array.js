@@ -25,6 +25,21 @@ function copyArrayIntoOther(){
   console.log(copiedArr);
 }
 
+function moveZeroesToEnd(){
+
+    let array = [1, 0, 2, 0, 3, 0, 4, 0]
+
+    for(let i = 0; i < array.length; i++){
+
+        if(array[i] == 0){
+            array.push(array[i]);
+        }
+    }
+
+    console.log("The array after moving zeroes to the end is: ", array);
+}
+
 copyArrayIntoOther();
+moveZeroesToEnd();
 
 
