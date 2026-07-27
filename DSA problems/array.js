@@ -57,12 +57,13 @@ function removeDuplicateElements(){
     }
 
     console.log("Flower counts:", counts); 
-    
+
     let uniqueFlowers = Object.keys(counts);
     console.log("Unique list:", uniqueFlowers);
 }
 
 copyArrayIntoOther();
 moveZeroesToEnd();
+removeDuplicateElements();
 
 
