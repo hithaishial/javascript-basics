@@ -48,10 +48,18 @@ function moveZeroesToEnd(){
 
 function removeDuplicateElements(){
 
-    let flowers = ["lilly", "rose", "daisy", "tulip", "jasmine", "lotus"]
-    let count;
+    let flowers = ["lilly", "rose", "daisy", "rose", "tulip", "lilly"];
+    let counts = {};
 
-    for(let i = 0; )
+    for (let i = 0; i < flowers.length; i++) {
+        let flower = flowers[i];
+        counts[flower] = (counts[flower] || 0) + 1;
+    }
+
+    console.log("Flower counts:", counts); 
+    
+    let uniqueFlowers = Object.keys(counts);
+    console.log("Unique list:", uniqueFlowers);
 }
 
 copyArrayIntoOther();
