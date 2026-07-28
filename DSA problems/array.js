@@ -72,6 +72,25 @@ function mergeTwoArraysToOne(){
     console.log("The new mwerged array is: ", array3);
 }
 
+const input = [1, 2, 3, 4, 5];
+
+function rotateRight() {
+    
+    const arr = [...input]; 
+  
+    if (arr.length > 0) {
+       const lastElement = arr.pop();
+       arr.unshift(lastElement);
+    }
+  
+    return arr;
+}
+
+const output = rotateRight();
+
+console.log("Input:", input);   
+console.log("Output:", output);
+
 copyArrayIntoOther();
 moveZeroesToEnd();
 removeDuplicateElements();
