@@ -62,8 +62,19 @@ function removeDuplicateElements(){
     console.log("Unique list:", uniqueFlowers);
 }
 
+function mergeTwoArraysToOne(){
+
+    let array1 = [27, 5, 29, 85,];
+    let array2 = [83, 90, 2, 47];
+    let array3 = [];
+
+    array3 = array1.concat(array2);
+    console.log("The new mwerged array is: ", array3);
+}
+
 copyArrayIntoOther();
 moveZeroesToEnd();
 removeDuplicateElements();
+mergeTwoArraysToOne();
 
 
